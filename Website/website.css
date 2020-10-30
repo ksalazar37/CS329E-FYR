@@ -1,0 +1,172 @@
+/* color scheme 
+BACKGROUND
+light red: #FFDCC8 // medium red #E37C65 // dark red #d37059
+red: #C55F50  // white: #FFFFFF // black: #000000 
+*/
+
+/* possible typefaces */
+/* display: "Londrina Outline"
+serif: "Arvo" "Antic Slab" "Enriqueta" "Aleo" "Hepta Slab" "Scope One"
+sans serif: "Quicksand"  
+sans serif (caps): "Alegreya Sans SC"
+cursive: "Satisfy" "La Belle Aurore"
+handwriting (caps): "Patrick Hand SC"
+handwriting (lowercase): "Itim" */
+
+/* headings */
+
+body{
+    background-color: #d37059;
+   
+}
+
+h1 {
+    font-family: "Londrina Outline";
+    font-size: 70px;
+    letter-spacing: 5px;
+    line-height: 20px;
+    padding-left: 40px;
+    text-align: left;
+}
+
+
+.all{
+    padding: "left";
+    background-color: #d37059;
+}
+
+table{
+    width: 95%;
+}
+
+.logodiv {
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th img {
+    display: block;
+    margin: auto;
+    width: 70px;
+
+}
+/* navigation  */
+.navigation {
+    font-family: "Quicksand";
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 20px;
+    text-align: right;
+}
+
+
+/* images */
+.banner {
+    max-width: 100%;
+    height: 540px;
+    object-fit: contain;
+    
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+/* text in front of banner slideshow */
+.welcome {
+    position: absolute;
+    top: 18.5%;
+    translate: (-50%, -50%);
+    width: 100%;
+    padding: 20px;
+    padding-top: 155px;
+    padding-bottom: 156px;
+    text-align: center;
+    background-color: #00000048;
+    font-family: "Quicksand";
+    font-size: 35px;
+    line-height: 20px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+
+.descriptiondiv {
+    text-align: center;
+    font-family: "Quicksand";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background-color: #d37059;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-top: 70px;
+}
+
+
+/* drop down menus  */
+
+
+
+
+.all {
+    width: 100%;
+}
+
+/* general text */
+div {
+    font-family: "Alegreya Sans SC";
+    background-color: #FFDCC8;
+    width: 100%;
+}
+
+
+
+/* input boxes */
+
+
+
+/* checkboxes & radio boxes */
+
+
+
+/* links */
+a:link {
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: #e3a294d6;
+    color: #ffffff;
+}
+ 
+a:active, a:visited {
+    color: #C55F50;
+}
+
+/* footer */
+.pf {
+    padding-left: 20px;
+    font-family: "Alegreya Sans SC";
+    color: #521717;
+    font-size: 20px;
+    background-color: #d37059;
+
+}
