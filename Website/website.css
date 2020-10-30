@@ -17,12 +17,14 @@ handwriting (lowercase): "Itim" */
 
 body{
     background-color: #d37059;
+    color: #C55F50;
    
 }
 
 h1 {
     font-family: "Londrina Outline";
     font-size: 70px;
+    color: #000000;
     letter-spacing: 5px;
     line-height: 20px;
     padding-left: 40px;
@@ -32,6 +34,8 @@ h1 {
 h3 {
     font-family: "Londrina Outline";
     font-size: 40px;
+    color: #ffffff;
+    text-align: center;
     letter-spacing: 5px;
     line-height: 35px;
     padding-left: 40px;
@@ -41,6 +45,8 @@ h3 {
 .all{
     padding: "left";
     background-color: #d37059;
+    
+    
 }
 
 table{
@@ -66,8 +72,12 @@ th img {
     font-weight: bold;
     padding-right: 20px;
     text-align: right;
+    color: #C55F50;
 }
 
+nav {
+    color: #C55F50;
+}
 
 /* images */
 .banner {
@@ -176,6 +186,7 @@ div {
     font-family: "Alegreya Sans SC";
     background-color: #FFDCC8;
     width: 100%;
+    
 }
 
 
@@ -202,9 +213,37 @@ a:hover {
     color: #ffffff;
 }
  
-a:active, a:visited {
+a:active {
     color: #C55F50;
 }
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+
+.ahome {
+    color: #C55F50;
+}
+
+.alogin {
+    color: #C55F50;
+}
+
+.aregister{
+    color: #C55F50;
+}
+
+.aconect {
+    color: #C55F50;
+}
+
+.acontact{
+    color: #C55F50;
+}
+
 
 /* footer */
 .pf {
