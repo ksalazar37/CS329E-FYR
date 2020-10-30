@@ -1,4 +1,4 @@
-# CS329E-FYT
+# CS329E-FYR
 ## Web Programming Project: Find A Recipe for Your Lifestyle
 
 Group Name:		Monday People  <br>
