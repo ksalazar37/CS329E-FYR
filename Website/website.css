@@ -29,6 +29,14 @@ h1 {
     text-align: left;
 }
 
+h3 {
+    font-family: "Londrina Outline";
+    font-size: 40px;
+    letter-spacing: 5px;
+    line-height: 35px;
+    padding-left: 40px;
+    text-align: left;  
+}
 
 .all{
     padding: "left";
@@ -114,6 +122,43 @@ img {
     margin-right: auto;
     width: 60%;
     padding-top: 70px;
+}
+
+
+
+.contact {
+    text-align: center;
+    font-family: "Quicksand";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background-color: #d37059;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-top: 100px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFDCC8;
+    border-top: none;
+    border-bottom: none;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.mailto{
+    color: #000000;
+    background-color: #FFDCC8;
+    padding: 10px 10px;
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 
