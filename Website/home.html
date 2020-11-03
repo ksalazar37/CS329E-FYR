@@ -57,7 +57,19 @@
         <br><br>
         Once you register, you can log in to save recipes on your account and connnect with other users.       
     </div>
-   
+	<!-- JC- Installing a popup login window -->
+	<button class='open-button' onclick = 'openForm()'>Login</button>
+	<div id='loginwindow' class='popupwindow'>
+		<form class='form-container'>
+		<h1> Login</h1>
+		<label for='email'><b>Email</b></label>
+		<input type='text' placeholder='Enter Email' name='email' required>
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+
+		<button type="submit" class="btn">Login</button>
+		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+	</div>
     <br><br>
     <br><br>
   
