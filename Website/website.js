@@ -35,3 +35,16 @@ function nextImage() {
 function setImage(idx) {
     document.banner.src = image_path+image_array[idx];
 }
+//-----------------------------
+//Start popup login form script
+function openForm() {
+	document.getElementById('loginwindow').style.display='block';
+}
+
+function closeForm() {
+	document.getElementById('loginwindow').style.display='none';
+}
+
+
+//End popup login form script
+//-----------------------------
