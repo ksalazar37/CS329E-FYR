@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +48,7 @@
 
 
         <h3> Register </h3>
-        <form id="registrationForm">
+        <form>
             <table id="userinfo">
                 <tr>
                     <td>
@@ -56,14 +58,25 @@
                         <input type="text" id="user" name="user" placeholder="Must be 6-10 characters." required>
                     </td>
                 </tr>
-
+                    
                 <tr>
                     <td>
-                        <label for="email">Email:</label>
+                    <label for="email">Email:</label>
                     </td>
                     <td>
                         <input type="text" id="email" name="email" required>
                     </td>
+                        <?php
+                            $email = $_POST["email"];
+                            //contains @
+                            $regex = "/@/";
+                            if (preg_match($regex,$email)){
+                            Echo "valid email";
+                            }
+                            else{
+                            Echo "invalid email";
+                            }
+                        ?>
                 </tr>
                 <tr>
                     <td>
@@ -91,6 +104,7 @@
                 </tr>
             </table>
         </form>
+
         <br><br>
         <br><br>
 
