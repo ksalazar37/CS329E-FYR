@@ -153,7 +153,21 @@ function clear(event) {
 
 
 //-----------------------------
-//Start DHTML script
+//Start DHTML script for the registration page
+var helpers = ["Your username must be 6-10 characters.",
+    "Your email address must have the form: user@domain",
+    "Your password must have at least 6-10 characters.",
+    "This password must match the one you typed in above",
+    "This box provides advice on filling out the form on this page. Put the mouse cursor over any input field to get advice"
+]
 
-//End DHTML script
+function messages(index) {
+    document.getElementById("adviceBox").value = helpers[index];
+}
+//End DHTML script for the registration page
+//-----------------------------
+
+//-----------------------------
+//Start DHTML script for the home page
+//End DHTML script for the home page
 //-----------------------------
