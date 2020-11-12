@@ -1,87 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equip="X-UA-Compatible" content="ie=edge">
-   
+
     <title> FYR: Home </title>
     <link rel="stylesheet" href="website.css">
     <script type="text/javascript" src="website.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Londrina Outline|Arvo|Antic Slab|Enriqueta|Aleo|Hepta Slab|Scope One|Quicksand|Alegreya Sans SC|Satisfy|La Belle Aurore|Patrick Hand SC|Itim' rel='stylesheet'>
-  
+
 </head>
-   
+
 <body onload="initBanner()">
     <div class="all">
-    
-  
-    <div id="navigation" class="navigation">
-        <table>
-            <tr>
-                <td> 
-                    <div class="logodiv">
-                        <img id='photo' src="./images/logo.png" width="70" height="70" alt="photo" >  
-                    </div>
-                    
-                </td>
-                <td> <h1> FYR  </h1>  </td>
-                <td>
-                    <nav >
-                        <a class="ahome" href="./home.html" >Home</a> |
-                        <a href="./login.html" >Log In</a> |
-                        <a href="./register.html" >Register</a> |
-                        <a href="./connect.html" >Connect</a> |
-                        <a href="./contactus.html" >Contact Us</a>    
-                    </nav>  
-                </td>
-            </tr>
-        </table>   
-    </div>
-     
-     
-    <div id="banner" class="banner">
-        <img src="./images/home1.jpg" name="banner" id="banner" width=100% alt="images"> 
-    </div>
-    
-    <div id="welcome" class="welcome">
-        <img src="./images/logowhite.png" name="logo" id="logo" class="logo" alt="logo"> 
-        <h2> Welcome to </h2>
-        <h2> Find Your Recipe </h2>
-    </div>
-    
-    <div id="descriptiondiv" class="descriptiondiv" >
-        As it becomes more important to live a healthy lifestyle while balancing other aspects of your life, at FYR, we have made it easier for you!
-        <br><br>
-        Click on our Register page above and put in your preferences to get recipes tailored to your wants and needs.
-        <br><br>
-        Once you register, you can log in to save recipes on your account and connnect with other users.       
-    </div>
-	<!-- JC- Installing a popup login window -->
-	<button class='open-button' onclick = 'openForm()'>Login</button>
-	<div id='loginwindow' class='popupwindow'>
-		<form class='form-container'>
-		<h2>Login</h2>
-		<label for='email'><b>Email</b></label><br>
-		<input type='text' placeholder='Enter Email' name='email' required><br>
-		<label for="psw"><b>Password</b></label><br>
-		<input type="password" placeholder="Enter Password" name="psw" required><br>
 
-		<button type="submit" class="btn">Login</button>
-		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-		</form>
-	</div>
-    <br><br>
-    <br><br>
-  
-    <div> 
-    <footer>
-        <p class="pf"> 	&#169 2020 FYR CO. </p>
-    </footer>
-    </div>
-      
-    <br>
-    <br>
-   
+
+        <div id="navigation" class="navigation">
+            <table>
+                <tr>
+                    <td>
+                        <div class="logodiv">
+                            <img id='photo' src="./images/logo.png" width="70" height="70" alt="photo">
+                        </div>
+
+                    </td>
+                    <td>
+                        <h1> FYR </h1>
+                    </td>
+                    <td>
+                        <nav>
+                            <a class="ahome" href="./home.html">Home</a> |
+                            <a href="./login.html">Log In</a> |
+                            <a href="./register.html">Register</a> |
+                            <a href="./connect.html">Connect</a> |
+                            <a href="./contactus.html">Contact Us</a>
+                        </nav>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="banner" class="banner">
+            <img src="./images/home1.jpg" name="banner" id="banner" width=100% alt="images">
+        </div>
+
+        <div id="welcome" class="welcome">
+            <img src="./images/logowhite.png" name="logo" id="logo" class="logo" alt="logo">
+            <h2> Welcome to </h2>
+            <h2> Find Your Recipe </h2>
+        </div>
+
+        <div id="descriptiondiv" class="descriptiondiv">
+            As it becomes more important to live a healthy lifestyle while balancing other aspects of your life, at FYR, we have made it easier for you!
+            <br><br> Click on our Register page above and put in your preferences to get recipes tailored to your wants and needs.
+            <br><br> Once you register, you can log in to save recipes on your account and connnect with other users.
+        </div>
+        <!-- JC- Installing a popup login window -->
+        <button class='open-button' onclick='openForm()'>Login</button>
+        <div id='loginwindow' class='popupwindow'>
+            <form class='form-container'>
+                <h2>Login</h2>
+                <label for='email'><b>Email</b></label><br>
+                <input type='text' placeholder='Enter Email' name='email' required><br>
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <br><br>
+        <br><br>
+
+        <div>
+            <footer>
+                <p class="pf"> &#169 2020 FYR CO. </p>
+            </footer>
+        </div>
+
+        <br>
+        <br>
+
 </body>
+
 </html>
