@@ -38,7 +38,7 @@ h1 {
 
 h3 {
     font-family: "Londrina Outline";
-    font-size: 40px;
+    font-size: 55px;
     color: #ffffff;
     text-align: center;
     letter-spacing: 5px;
@@ -148,7 +148,7 @@ img {
     font-family: "Quicksand";
     font-size: 30px;
     font-weight: bold;
-    line-height: 35px;
+    line-height: 55px;
     letter-spacing: 1px;
     word-spacing: 2px;
     background-color: #d37059;
@@ -164,6 +164,7 @@ img {
     border-bottom: none;
     padding-left: 70px;
     padding-right: 70px;
+    transition: 0.4s;
 }
 
 .mailto {
@@ -233,6 +234,7 @@ img {
     margin-right: auto;
     padding-bottom: 80px;
     width: 55%;
+    transition: 0.3s;
 }
 
 .input_text {
@@ -423,8 +425,80 @@ a:visited {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     text-align: left;
-    width: 25%;
-    padding: 3em;
-    height: 250px;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-bottom: 70px;
+    height: 470px;
     color: black;
+    font-size: 19px;
+}
+
+.input_textr {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 10px 10px;
+    margin: 10px 8px;
+    margin-left: 60px;
+    font-size: 17px;
+    border-style: none;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+/* register button */
+#reg {
+    padding: 8px 8px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: #965248;
+    color: #f1f1f1;
+    cursor: pointer;
+    margin-left: 60px;
+    background-color: #965248 ;
+    font-family: "Alegreya Sans SC";
+    font-size: 19px;
+}
+
+#clear {
+    padding: 8px 17px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: #a87168;
+    color: #f1f1f1;
+    cursor: pointer;
+    background-color: #a87168 ;
+    font-family: "Alegreya Sans SC";
+    font-size: 19px;
+}
+
+#reg:hover {
+    opacity: 0.6;
+}
+
+#clear:hover {
+    opacity: 0.8;
+}
+
+#adviceBox {
+    font-family: "Quicksand";
+    font-size: 17px;
+    color: #9c655d;
+    width: 85%;
+    margin-left: 30px;
+    background-color: #FFDCC8;
+    border-style: none;
+    box-sizing: border-box;  
 }
