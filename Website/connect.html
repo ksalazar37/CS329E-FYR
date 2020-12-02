@@ -5,62 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equip="X-UA-Compatible" content="ie=edge">
-
-    <title> FYR: Connect </title>
+   
+    <title> FYT: Connect </title>
     <link rel="stylesheet" href="website.css">
     <script type="text/javascript" src="website.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Londrina Outline|Arvo|Antic Slab|Enriqueta|Aleo|Hepta Slab|Scope One|Quicksand|Alegreya Sans SC|Satisfy|La Belle Aurore|Patrick Hand SC|Itim' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body onload="initBanner()">
     <div class="all">
+    
+  
+    <div id="navigation" class="navigation">
+        <table>
+            <tr>
+                <td> 
+                    <div class="logodiv">
+                        <img id='photo' src="./images/logo.png" width="70" height="70" alt="photo" >  
+                    </div>
+                    
+                </td>
+                <td> <h1> FYR  </h1>  </td>
+                <td>
+                    <nav >
+                        <a class="ahome" href="./home.html" >Home</a> |
+                        <a href="./login.html" >Log In</a> |
+                        <a href="./register.html" >Register</a> |
+                        <a href="./connect.html" >Connect</a> |
+                        <a class="acontact" href="./contactus.html" >Contact Us</a>   
+                    </nav>  
+                </td>
+            </tr>
+        </table>   
+    </div>
+     
+     
+    
+    <h3> Connect With Us</h3>
+   
+    <br><br>
 
+    <div class="socialmedia"> 
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/home" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    </div>
+    
+    <br><br>
 
-        <div id="navigation" class="navigation">
-            <table>
-                <tr>
-                    <td>
-                        <div class="logodiv">
-                            <img id='photo' src="./images/logo.png" width="70" height="70" alt="photo">
-                        </div>
-
-                    </td>
-                    <td>
-
-                        <h1> FYR </h1>
-
-                    </td>
-                    <td>
-                        <nav>
-                            <a class="ahome" href="./home.html">Home</a> |
-                            <a href="./login.html">Log In</a> |
-                            <a href="./register.html">Register</a> |
-                            <a href="./connect.html">Connect</a> |
-                            <a class="acontact" href="./contactus.html">Contact Us</a>
-                        </nav>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-
-
-
-        <h3> Connect </h3>
-
-        <br><br>
-        <br><br>
-
-        <div>
-            <footer>
-                <p class="pf"> 2020 FYR CO. </p>
-            </footer>
-        </div>
-
+    <form class="connectform"> 
+        <label for="name"> First Name </label>
         <br>
+        <input type="text" id="fname" name="fname" class="input_text"><br><br>
+    
+        <label for="name"> Last Name </label>
         <br>
+        <input type="text" id="lname" name="lname" class="input_text"><br><br>
 
+        <label for="eaddress"> E-mail address </label>
+        <br>
+        <input type="text" id="eaddress" name="eaddress" class="input_text"><br><br>
+            
+        <label for="phonenum"> Phone Number </label>
+        <br>
+        <input type="text" id="phonenum" name="phonenum" class="input_text"><br><br>
+        
+        <label for="comments" class="comment">Comments & Feedback</label>
+        <br>
+        <textarea id="comments" name="comments" class="comments" rows="6" cols="40"></textarea>   
+        
+        <br><br>
+        <div class="bsdiv">
+            <input type="submit" value="Submit" class="buttons">
+        </div>
+        
+    </form>
+  
+    <div> 
+    <footer>
+        <p class="pf"> 2020 FYR CO. </p>
+    </footer>
+    </div>
+      
+    <br>
+    <br>
+   
 </body>
 
 </html>
