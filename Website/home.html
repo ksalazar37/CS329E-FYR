@@ -7,10 +7,11 @@
     <meta http-equip="X-UA-Compatible" content="ie=edge">
 
     <title> FYR: Home </title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="website.css">
     <script type="text/javascript" src="website.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Londrina Outline|Arvo|Antic Slab|Enriqueta|Aleo|Hepta Slab|Scope One|Quicksand|Alegreya Sans SC|Satisfy|La Belle Aurore|Patrick Hand SC|Itim' rel='stylesheet'>
-
+    
 </head>
 
 <body onload="initBanner()">
@@ -64,10 +65,10 @@
             <form class='form-container' action="./login.php" method = 'post'>
                 <h2>Login</h2>
                 <label for='email'><b>Email</b></label><br>
-                <input type='text' placeholder='Enter Email' name='email' required><br>
+                <input type='email' placeholder='Enter Email' name='email' class="login_input" required><br>
                 <label for="psw"><b>Password</b></label><br>
-                <input type="password" placeholder="Enter Password" name="psw" required><br>
-				<p><center><a href="./register.html">Don't have an account yet?<br> Register now!</a></center></p>
+                <input type="password" placeholder="Enter Password" name="psw" class="login_input" required><br>
+				<p><center><a href="./register.html" class="register_l">Don't have an account yet?<br> Register now!</a></center></p>
                 <button type="submit" class="btn">Login</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
