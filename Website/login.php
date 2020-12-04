@@ -31,7 +31,7 @@ $psw = $_POST["psw"];
 echo $email .'<br>';
 echo $psw .'<br>';
 // -----------------
-// Handel user's login info
+// Handle user's login info
 // -----------------
 $row_cnt = $result ->num_rows;
 $loop_ct = 0;

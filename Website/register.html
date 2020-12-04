@@ -44,9 +44,8 @@
 
 
 
-
         <h3> Register </h3>
-        <form id="registrationForm" class="registrationForm">
+        <form id="registrationForm" class="registrationForm" method="POST" action="register_user.php">
             <table id="userinfo">
                 <caption>
                     <h2>Please fill out the fields below:</h2>
@@ -89,7 +88,7 @@
                         &nbsp
                     </td>
                     <td>
-                        <button type="button" id="reg">Register</button>
+                        <input type="submit" id="reg" id = "register_" value = "Register" name = "register_">
                         <input type="reset" id="clear" value="Clear"></input>
                     </td>
                 </tr>
