@@ -47,8 +47,56 @@
 
         <h3> Log In </h3>
 
-        <br><br>
-        <br><br>
+        <br>
+
+       
+        <form class="loginpage" action="./login.php" method = 'post'>
+            <table id="userinfo">
+                <caption>
+                    <h2>Please enter your login information:</h2>
+                </caption>
+                <tr>
+                    <td>
+                        <label for='email'><b>Email:</b></label>
+                    </td>
+                    <td>
+                        <input type='email' placeholder='Enter Email' name='email' class="input_textr" required><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="psw"><b>Password:</b></label><br>
+                    </td>
+                    <td> 
+                        <input type="password" placeholder='Enter Password' name='email' class="input_textr" required><br>
+                    </td>
+                <tr>
+                
+
+                <tr>   
+                    <td>
+                        &nbsp 
+                    </td>
+                    <td>
+                        <button type="submit" id="reg">Login</button>
+                        <input type="reset" id="clear" value="Clear"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       &nbsp 
+                    </td>
+                    <td>
+                        <p><center><a href="./register.html" class="register_lp">New users, click here to register<br></a></center></p>
+                    </td>
+                </tr>
+                </table>
+                
+				
+        </form>
+
 
         <div>
             <footer>

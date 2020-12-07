@@ -44,9 +44,8 @@
 
 
 
-
         <h3> Register </h3>
-        <form id="registrationForm" class="registrationForm">
+        <form id="registrationForm" class="registrationForm" method="POST" action="register_user.php">
             <table id="userinfo">
                 <caption>
                     <h2>Please fill out the fields below:</h2>
@@ -65,7 +64,7 @@
                         <label for="email">Email:</label>
                     </td>
                     <td>
-                        <input type="text" onmouseover="messages(1)" onmouseout="messages(4)" id="email" name="email" class="input_textr" required>
+                        <input type="email" onmouseover="messages(1)" onmouseout="messages(4)" id="email" name="email" class="input_textr" required>
                     </td>
                 </tr>
                 <tr>
@@ -89,8 +88,8 @@
                         &nbsp
                     </td>
                     <td>
-                        <button type="button" id="reg">Register</button>
-                        <button type="button" id="clear">Clear</button>
+                        <input type="submit" id="reg" id = "register_" value = "Register" name = "register_">
+                        <input type="reset" id="clear" value="Clear"></input>
                     </td>
                 </tr>
                 <tr>

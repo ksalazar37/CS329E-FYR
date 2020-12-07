@@ -14,7 +14,7 @@
 
 </head>
 
-<body onload="initBanner()">
+<body>
     <div class="all">
 
 

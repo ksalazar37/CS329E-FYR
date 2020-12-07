@@ -118,19 +118,19 @@ function register(event) {
     var pass2 = document.getElementById("pass2").value;
 
     if (user.length < 6 || user.length > 10) {
-        window.alert("Invalid username or password.")
+        window.alert("Username must be between 6 and 10 characters.")
     } else if (OnlyLettersandDigits(user) == false) {
-        window.alert("Invalid username or password.")
+        window.alert("Invalid username.")
     } else if (isNaN(user.charAt(0)) == false) {
-        window.alert("Invalid username or password.")
+        window.alert("Invalid username.")
     } else if (pass !== pass2) {
-        window.alert("Invalid username or password.")
+        window.alert("Passwords do not match")
     } else if (pass.length < 6 || pass.length > 10) {
-        window.alert("Invalid username or password.")
+        window.alert("Password must be between 6 and 10 characters.")
     } else if (OnlyLettersandDigits(pass) == false) {
-        window.alert("Invalid username or password.")
+        window.alert("Password should not contain any special characters.")
     } else if (containsLowerUpperDigit(pass) == false) {
-        window.alert("Invalid username or password.")
+        window.alert("Password must contain at least one digit and at least one lower case and one upper case letter.")
     } else {
         window.alert("User validated.")
     }
@@ -154,11 +154,11 @@ function clear(event) {
 
 //-----------------------------
 //Start DHTML script for the registration page
-var helpers = ["Your username must be 6-10 characters.",
+var helpers = ["Your username must be 6-10 characters long.",
     "Your email address must have the form: user@domain",
-    "Your password must have at least 6-10 characters.",
+    "Your password must be 6-10 characters long. It should not contain any special characters, and include at least one number, one lower case, and one upper case letter. ",
     "This password must match the one you typed in above",
-    "This box provides advice on filling out the form on this page. Put the mouse cursor over any input field to get advice"
+    "This box provides advice on filling out the form on this page. Hover the mouse cursor over any input field to get advice"
 ]
 
 function messages(index) {

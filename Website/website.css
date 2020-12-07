@@ -42,7 +42,7 @@ h3 {
     color: #ffffff;
     text-align: center;
     letter-spacing: 5px;
-    line-height: 35px;
+    line-height: 50px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -146,9 +146,9 @@ img {
 .contact {
     text-align: center;
     font-family: "Quicksand";
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
-    line-height: 55px;
+    line-height: 25px;
     letter-spacing: 1px;
     word-spacing: 2px;
     background-color: #d37059;
@@ -158,10 +158,6 @@ img {
     width: 60%;
     padding-top: 20px;
     border-width: 1px;
-    border-style: solid;
-    border-color: #FFDCC8;
-    border-top: none;
-    border-bottom: none;
     padding-left: 70px;
     padding-right: 70px;
     transition: 0.4s;
@@ -247,6 +243,32 @@ img {
     border-style: none;
     box-sizing: border-box;
     font-family: "Quicksand";
+}
+
+.login_input {
+    width: 100%;
+    background-color: #e4d2c7;
+    padding: 10px 10px;
+    margin: 35px 35px;
+    margin-left: 60px;
+    font-size: 16px;
+    border-style: none;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+.register_l {
+    color: #000000;
+    padding: 10px 20px;
+    background-color: #e3a294d6 ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.register_l:hover {
+    background-color: #d37059;
+    color: #ffffff;
 }
 
 .comments{
@@ -395,6 +417,7 @@ a:visited {
 }
 
 .form-container input[type=text],
+.form-container input[type=email],
 .form-container input[type=password] {
     max-width: 300px;
     padding: 15px;
@@ -404,18 +427,21 @@ a:visited {
 }
 
 .form-container .btn {
-    background-color: #4CAF50;
+    background-color: #478b49;
     color: white;
-    padding: 16px 20px;
+    padding: 14px 14px;
     border: none;
     cursor: pointer;
     width: 100%;
     margin-bottom: 10px;
     opacity: 0.8;
+    font-family: "Alegreya Sans SC";
+    font-size: 17px;
+    letter-spacing: 1px;
 }
 
 .form-container .cancel {
-    background-color: red;
+    background-color: #aa3a3a;
 }
 
 #registrationForm {
@@ -425,14 +451,78 @@ a:visited {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     text-align: left;
-    width: 40%;
+    width: 50%;
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 35px;
     padding-bottom: 70px;
     height: 470px;
     color: black;
+    font-size: 20px;
+}
+
+/* LOGIN.HTML */
+.loginpage {
+    background-color: #FFDCC8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    text-align: left;
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-bottom: 70px;
+    height: 362px;
+    color: black;
     font-size: 19px;
+}
+
+.log_btn {
+    background-color: #478b49;
+    color: white;
+    padding: 14px 14px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 70px;
+    opacity: 0.6;
+    font-family: "Alegreya Sans SC";
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.log_btn:hover {
+    background-color: #478b49;
+    color: white;
+    padding: 14px 14px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    opacity: 0.9;
+    font-family: "Alegreya Sans SC";
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.register_lp{
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #d36f59b4 ;
+    text-align: center;
+    margin-left: 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.register_lp:hover {
+    background-color: #d37059;
+    color: #ffffff;
 }
 
 .input_textr {
@@ -447,9 +537,9 @@ a:visited {
     font-family: "Quicksand";
 }
 
-/* register button */
+/* register / login  button */
 #reg {
-    padding: 8px 8px;
+    padding: 8px 24px;
     margin-top: 20px;
     text-align: center;
     text-decoration: none;
@@ -466,7 +556,7 @@ a:visited {
 }
 
 #clear {
-    padding: 8px 17px;
+    padding: 8px 22px;
     margin-top: 20px;
     margin-right: 0px;
     margin-bottom: 20px;
