@@ -38,7 +38,7 @@ $loop_ct = 0;
 while ($row = mysqli_fetch_assoc($result)){
 	if ($email == $row['Email'] || $psw == $row['Password']){
 		setcookie($email, $psw, time()+(86400*30),"/");
-		header('Location:home.html');
+		header('Location:RecipeSearch.php');
 		exit;
 	} 
 }
