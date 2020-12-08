@@ -612,5 +612,21 @@ a:visited {
 }
 
 #resultsdiv {
-    width: 600px;
+    width: 815px;
+    text-align: center;
+}
+
+#resultstable {
+    width: 815px;
+}
+
+#resultsform {
+    width: 815px;
+}
+
+#ajaxDiv {
+    width: 815px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

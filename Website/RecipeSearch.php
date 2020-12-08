@@ -1,9 +1,8 @@
-<?php 
+<?php
 if (!isset($_COOKIE["email"]) && !isset($_COOKIE["psw"])) {
-    header("Location: login.php");
+    header("Location: login.html");
     exit();
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
