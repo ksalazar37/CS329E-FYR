@@ -1,3 +1,9 @@
+<?php
+if (!isset($_COOKIE["email"]) && !isset($_COOKIE["psw"])) {
+    header("Location: login.html");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +56,9 @@
                 if(i1 == ""){
                     window.alert("You must enter at least one ingredient.");
                 }
+                
                 else{
+                    
                         var ajaxRequest;  // The variable that makes Ajax possible!
                         ajaxRequest = new XMLHttpRequest();
                         
@@ -71,6 +79,9 @@
                         ajaxRequest.send(null);
                 }
             }
+
+
+           
             </script>
 
 
@@ -78,6 +89,7 @@
 
 <form method = "post" id="registrationForm" name = 'myForm' >
 <h3>Recipe Search</h3>
+<h4>We have over 200 recipes that you can search from! Put in some ingredients you have at home to get started.</h4>
 <?php 
        $server = "fall-2020.cs.utexas.edu";
        $myuser = "cs329e_bulko_non86";
@@ -108,6 +120,7 @@
        echo "<input class=\"buttons\" name = \"reset\" type = \"reset\" value = \"Reset\" />";
            echo "</td> </tr>	</table>";  
      ?>
+    
 	</form>
     <div id = 'ajaxDiv'></div>
 	</body>

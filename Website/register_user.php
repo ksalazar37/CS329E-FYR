@@ -8,7 +8,10 @@
         $user = "cs329e_bulko_avalon";
         $pwd = "area+breath\$Watch";
         $dbName = "cs329e_bulko_avalon";
-
+		echo "Server: " . $server."<br>";
+		echo "User: " . $user."<br>";
+		echo "Server: " . $dbName."<br>";
+		// meow
         // create connection to SQL
         $mysqli = new mysqli ($server, $user, $pwd, $dbname);
 
@@ -36,11 +39,11 @@
         */
         
         // insert new user into database (later, add check to see if user / email already exists)
-        $insert_query = "INSERT INTO FYR_LOGIN (User, Email, Passwd)
-        VALUES ('$username', '$email', '$pass');";
+		echo('meow');
+        $insert_query = "INSERT INTO cs329e_bulko_avalon.FYR_LOGIN (User, Email, Passwd) VALUES ('$username', '$email', '$pass');";
 
-        if ($mysqli->query($insert_query) === TRUE) {
-        echo "Thank you for registering an account with FYR!";
+        if ($mysqli->query($insert_query)) {
+        echo('<script> if(confirm("Registration successful!!\n Taking you to the recipe search page now...") ){location.replace("./home.html")}</script>');
         } 
         else {
         echo "Error: " . $insert_query . "<br>" . $mysqli->error;
