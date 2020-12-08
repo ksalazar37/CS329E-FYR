@@ -7,6 +7,7 @@
 
     <title> FYR: Recipe Search </title>
     <link rel="stylesheet" href="website.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="website.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Londrina Outline|Arvo|Antic Slab|Enriqueta|Aleo|Hepta Slab|Scope One|Quicksand|Alegreya Sans SC|Satisfy|La Belle Aurore|Patrick Hand SC|Itim' rel='stylesheet'>
 
@@ -45,9 +46,9 @@
                 var i3 = document.getElementById('i3').value;
                 var i4 = document.getElementById('i4').value;
                 var i5 = document.getElementById('i5').value;
-                var diet = document.getElementByID("diet").value;
-                if(diet == "" || i1 == ""){
-                    window.alert("Diet and One Ingredient are required.");
+                        
+                if(i1 == ""){
+                    window.alert("You must enter at least one ingredient.");
                 }
                 else{
                         var ajaxRequest;  // The variable that makes Ajax possible!
@@ -64,7 +65,7 @@
                         
                         var queryString = "?i1=" + i1 ;
                         
-                        queryString += "&diet=" + diet + "&i2=" + i2 + "&i3=" + i3 + "&i4=" + i4 + "&server=" + server + "&myuser=" + myuser + "&pwd=" + pwd  + "&dbName=" + dbName;
+                        queryString += "&i2=" + i2 + "&i3=" + i3 + "&i4=" + i4 + "&i5=" + i5 +"&server=" + server + "&myuser=" + myuser + "&pwd=" + pwd  + "&dbName=" + dbName;
                         
                         ajaxRequest.open("GET", "RecipeSearch2.php" + queryString, true);
                         ajaxRequest.send(null);
@@ -75,7 +76,7 @@
 
 
 
-<form method = "post" name = 'myForm' >
+<form method = "post" id="registrationForm" name = 'myForm' >
 <h3>Recipe Search</h3>
 <?php 
        $server = "fall-2020.cs.utexas.edu";
@@ -85,7 +86,7 @@
 
     
        echo "<table id='userinfo'><tr><td>
-       Ingredient 1: <input type = 'text' id = 'i1' required/> </td>";
+       Ingredient 1: <input type = 'text' id = 'i1' /> </td>";
             echo "</tr>";
        echo "<tr><td>
        Ingredient 2: <input type = 'text' id = 'i2'/> </td>";
@@ -96,45 +97,19 @@
             echo "<tr><td>
        Ingredient 4: <input type = 'text' id = 'i4'/> </td>";
             echo "</tr>";
-            echo "<table id='userinfo'><tr><td>
+            echo "<tr><td>
        Ingredient 5: <input type = 'text' id = 'i5'/> </td>";
             echo "</tr>";
 
 
-            echo "<tr><td>
-            <input type='radio' id='Healthy' name='diet' value='Healthy'/>
-            <label for='Healthy'>Healthy</label>";
-            echo "</td></tr>";
-            echo "<tr><td>
-            <input type='radio' id='GlutenFree' name='diet' value='GlutenFree'/>
-            <label for='GlutenFree'>Gluten Free</label>";
-            echo "</td></tr>";
-            echo "<tr><td>
-            <input type='radio' id='Vegetarian' name='diet' value='Vegetarian'/>
-            <label for='Vegetarian'>Vegetarian</label>";
-            echo "</td></tr>";
-            echo "<tr><td>
-            <input type='radio' id='Keto' name='diet' value='Keto'/>
-            <label for='Keto'>Keto</label>";
-            echo "</td></tr>";
-            echo "<tr><td>
-            <input type='radio' id='Vegan' name='diet' value='Vegan'/>
-            <label for='Vegan'>Vegan</label>";
-            echo "</td></tr>";
-            echo "<tr><td>
-            <input type='radio' id='LowCarb' name='diet' value='LowCarb'/>
-            <label for='LowCarb'>LowCarb</label>";
-            echo "</td></tr>";
 
 
-
-       echo "<input type = \"button\" onclick = \"ajaxFunction('$server','$myuser','$pwd','$dbName')\" value = \"Submit\"/> <br><br> ";
-       echo "<input name = \"reset\" type = \"reset\" value = \"Reset\" />";
+       echo "<tr> <td><input  class=\"buttons\" type = \"button\" onclick = \"ajaxFunction('$server','$myuser','$pwd','$dbName')\" value = \"Submit\"/> <br><br> ";
+       echo "<input class=\"buttons\" name = \"reset\" type = \"reset\" value = \"Reset\" />";
            echo "</td> </tr>	</table>";  
      ?>
 	</form>
     <div id = 'ajaxDiv'></div>
-        </div>
 	</body>
     </html>
 

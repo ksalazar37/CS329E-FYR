@@ -20,24 +20,24 @@
    $mysqli->select_db($dbName) or die($mysqli->error);
    
    // Retrieve data from Query String
-   $i1 = $_GET["i1"];
-    $i2 = $_GET["i2"];
-    $i3 = $_GET["i3"];
-    $i4 = $_GET["i4"];
-    $i5 = $_GET["i5"];
-    $diet = $_GET["diet"];
+    $i1 = $_GET['i1'];
+    $i2 = $_GET['i2'];
+    $i3 = $_GET['i3'];
+    $i4 = $_GET['i4'];
+    $i5 = $_GET['i5'];
+
    // Escape User Input to help prevent SQL Injection
    $i1 = $mysqli->real_escape_string($i1);
-   $i2 = $mysqli->real_escape_string($i2);
+  $i2 = $mysqli->real_escape_string($i2);
    $i3 = $mysqli->real_escape_string($i3);
    $i4 = $mysqli->real_escape_string($i4);
    $i5 = $mysqli->real_escape_string($i5);
-   $diet = $mysqli->real_escape_string($diet);
+
 
    //build query
    //first case senario--------------------------------------
 
-      $query = "SELECT * FROM recipes WHERE TYPE = '$diet' AND INGREDIENTS LIKE '%$i1%' AND INGREDIENTS LIKE '%$i2%' AND INGREDIENTS LIKE '%$i3%' AND INGREDIENTS LIKE '%$i4%' AND INGREDIENTS LIKE '%$i5%';";
+      $query = "SELECT * FROM recipes WHERE ingredients LIKE '%$i1%' AND INGREDIENTS LIKE '%$i2%' AND INGREDIENTS LIKE '%$i3%' AND INGREDIENTS LIKE '%$i4%' AND INGREDIENTS LIKE '%$i5%';";
       
       //Execute query
  
@@ -46,11 +46,13 @@
       //Build Result String
       $display_string = "";
       
-      // Insert a new row in the table for each person returned
-      while($row = $result->fetch_array(MYSQLI_ASSOC)) {
-        $data = \preg_replace('/\b(https?:\/\/.+)\b/i', '<a href="\1">\1</a>', $row[4]);
-        echo "<strong>$row[1] </strong> | $data <br>";
+      if (mysqli_num_rows($result)==0){
+        $display_string .= "No Results";
+        echo $display_string;
       }
+      while ($row = $result->fetch_row()) {
+        echo " $row[1] <br>";
+    }
       
 
             
