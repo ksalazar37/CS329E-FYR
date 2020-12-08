@@ -1,3 +1,4 @@
+
 <?php
 
    error_reporting(E_ALL);
@@ -46,16 +47,36 @@
       //Build Result String
       $display_string = "";
       
-      if (mysqli_num_rows($result)==0){
+    if (mysqli_num_rows($result)==0){
         $display_string .= "No Results";
         echo $display_string;
       }
-      while ($row = $result->fetch_row()) {
-        echo " $row[1] <br>";
-    }
+      else{
+        echo '<div id="resultsdiv">';
+      echo '<h3>Here are your results.</h3><br>';
+      echo '<form method = "post" id="resultsform"';
+      $server = "fall-2020.cs.utexas.edu";
+       $myuser = "cs329e_bulko_non86";
+       $pwd = "mercy-feet7Sullen";
+       $dbName = "cs329e_bulko_non86";
+       
+       echo "<table id='resultstable'>";
+      while ($row = $result->fetch_row()) {     
+          echo "<tr><td>"; 
+        echo "<strong>Recipe Name:</strong> $row[1] <br>";
+        echo "<strong>Minutes:</strong> $row[2] <br>";
+        echo "<strong>Instructions: </strong>$row[3] <br>";
+        echo "<strong>Description:</strong> $row[4] <br>";
+        echo "<strong>Ingredients: </strong>$row[5] <br>";
+        echo"</td></tr>";
+        echo "</br></br>";
+       //echo "<tr> <td><input id='recipeSelected' class=\"buttons\" type = \"button\" onclick = \"ajaxFunction2('$server','$myuser','$pwd','$dbName','$row[0]')\" value = \"$row[0]\"/> $row[1]<br><br> ";
+    }}
+   
+    echo"</table>";
+    echo'</form>';
+    echo '<div id="resultsdiv">';
+      //if the user clicks an id
       
-
-            
-
-
 ?>
+
