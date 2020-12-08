@@ -1,5 +1,7 @@
 <?php
-
+    error_reporting(E_ALL);
+    ini_set("display_errors", "on");
+    
     // ------------------------ REGISTER USER -----------------------
     function register() {
         $server = "fall-2020.cs.utexas.edu";
