@@ -1,3 +1,10 @@
+<?php 
+if (!isset($_COOKIE["email"]) && !isset($_COOKIE["psw"])) {
+    header("Location: login.php");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
