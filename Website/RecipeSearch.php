@@ -37,6 +37,7 @@ if (!isset($_COOKIE["email"]) && !isset($_COOKIE["psw"])) {
             <a class="ahome" href="./home.html">Home</a> |
             <a href="./login.html">Log In</a> |
             <a class="aregister" href="./register.html">Register</a> |
+            <a href="./RecipeSearch.php">Recipe Search</a> |
             <a href="./connect.html">Connect</a> |
             <a href="./contactus.html">Contact Us</a>
         </nav>
