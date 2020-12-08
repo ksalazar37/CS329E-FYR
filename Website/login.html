@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equip="X-UA-Compatible" content="ie=edge">
-   
-    <title> FYT: Log In </title>
+
+    <title> FYR: Log In </title>
     <link rel="stylesheet" href="website.css">
     <script type="text/javascript" src="website.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Londrina Outline|Arvo|Antic Slab|Enriqueta|Aleo|Hepta Slab|Scope One|Quicksand|Alegreya Sans SC|Satisfy|La Belle Aurore|Patrick Hand SC|Itim' rel='stylesheet'>
@@ -49,8 +49,8 @@
 
         <br>
 
-       
-        <form class="loginpage" action="./login.php" method = 'post'>
+
+        <form class="loginpage" id="registrationForm" action="./login.php" method='post'>
             <table id="userinfo">
                 <caption>
                     <h2>Please enter your login information:</h2>
@@ -68,33 +68,35 @@
                     <td>
                         <label for="psw"><b>Password:</b></label><br>
                     </td>
-                    <td> 
+                    <td>
                         <input type="password" placeholder='Enter Password' name='email' class="input_textr" required><br>
                     </td>
-                <tr>
-                
+                    <tr>
 
-                <tr>   
-                    <td>
-                        &nbsp 
-                    </td>
-                    <td>
-                        <button type="submit" id="reg">Login</button>
-                        <input type="reset" id="clear" value="Clear"></input>
-                    </td>
-                </tr>
 
-                <tr>
-                    <td>
-                       &nbsp 
-                    </td>
-                    <td>
-                        <p><center><a href="./register.html" class="register_lp">New users, click here to register<br></a></center></p>
-                    </td>
-                </tr>
-                </table>
-                
-				
+                        <tr>
+                            <td>
+                                &nbsp
+                            </td>
+                            <td>
+                                <button type="submit" id="reg">Login</button>
+                                <input type="reset" id="clear" value="Clear"></input>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                &nbsp
+                            </td>
+                            <td>
+                                <p>
+                                    <center><a href="./register.html" class="register_lp">New users, click here to register<br></a></center>
+                                </p>
+                            </td>
+                        </tr>
+            </table>
+
+
         </form>
 
 
